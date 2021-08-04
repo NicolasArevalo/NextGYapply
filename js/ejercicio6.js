@@ -1,23 +1,33 @@
 const obj = [{
     "ciudad": "Barranquilla",
-    "mes": "marzo",
-    "totalVentas": 9087000
+    "enero": 50800,
+    "febrero": 80000,
+    "marzo": 20000,
+    "totalVentas": 150800
 },{
     "ciudad": "Cartagena",
-    "mes": "enero",
-    "totalVentas": 298765
+    "enero": 245,
+    "febrero": 1000,
+    "marzo": 100,
+    "totalVentas": 1345
 },{
     "ciudad": "Sincelejo",
-    "mes": "enero",
-    "totalVentas": 345678
+    "enero": 5,
+    "febrero": 90,
+    "marzo": 45,
+    "totalVentas": 140
 },{
     "ciudad": "Bogota",
-    "mes": "enero",
-    "totalVentas": 44556677
+    "enero": 345000,
+    "febrero": 0,
+    "marzo": 20000,
+    "totalVentas": 365000
 },{
     "ciudad": "Tunja",
-    "mes": "enero",
-    "totalVentas": 1588888
+    "enero": 67000,
+    "febrero": 90000,
+    "marzo": 13000,
+    "totalVentas": 170000
 }]
 
 
@@ -30,7 +40,7 @@ function ejecutarSeis(){
     for(var i=0; i<=obj.length-1; i++){
         /* console.log('entré al for'); */
         if(obj[i]['ciudad'] === ciudadUsuario){
-            mostrar.innerHTML=('Mes: '+obj[i]['mes'] + " <br> Total de ventas: " + obj[i]['totalVentas']);
+            mostrar.innerHTML=('Enero: '+obj[i]['enero'] + " <br> Febrero: " + obj[i]['febrero']+" <br> Marzo: " + obj[i]['marzo']+" <br> Total de ventas: " + obj[i]['totalVentas']);
             break;
         }
 
