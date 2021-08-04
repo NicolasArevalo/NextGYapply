@@ -1,25 +1,39 @@
-
-var datos = new Array();
-var txt = new XMLHttpRequest();
-var ruta = 'numeros.txt';
-
-txt.open("GET", ruta, false);
-txt.send(null);
-
-var datosCrudos = txt.responseText;
-console.log(datosCrudos);
-for (var i=0; i<datosCrudos.length; i++ ){
-    datosCrudos
-}
-
-datos.forEach(function(data){
-    console.log(data);
-
-})
+const numeros=[1,2,4,5,6,7,8,5,5234,234,23,423,4,23,5,3,645,6]
+var primos = [];
+var pares = [];
 
 
-function cambiar(){
+
+function ejecutarDos() {
+    var resultadoEj2 = document.getElementById("resultadoEj2");
     console.log('cualquier cosa');
-    var file = document.getElementById("file").value;
-    console.log(file)
+    numeros.forEach(element => {
+
+        if (element % 2 == 0) { // Para los pares
+
+            pares.push(element);
+        }
+
+        if(primo(element)) primos.push(element);
+
+        console.log('primos: '+primos);
+        console.log('pares: '+pares);
+
+        function primo(numero) {
+
+            for (var i = 2; i < numero; i++) {
+
+                if (numero % i === 0) {
+                    return false;
+                }
+
+            }
+
+            return numero !== 1;
+        }
+
+    });
+
+    resultadoEj2.innerHTML = ('primos: '+primos+'<br> pares: '+pares);
+
 }
