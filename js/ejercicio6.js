@@ -20,6 +20,9 @@ const obj = [{
     "totalVentas": 1588888
 }]
 
+const objJsonExterno = JSON.parse(ciudades.json);
+console.log(objJsonExterno);
+
 
 function ejecutarSeis(){
 

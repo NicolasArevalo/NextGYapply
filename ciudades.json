@@ -1,0 +1,21 @@
+[{
+    "ciudad": "Barranquilla",
+    "mes": "marzo",
+    "totalVentas": 9087000
+},{
+    "ciudad": "Cartagena",
+    "mes": "enero",
+    "totalVentas": 298765
+},{
+    "ciudad": "Sincelejo",
+    "mes": "enero",
+    "totalVentas": 345678
+},{
+    "ciudad": "Bogota",
+    "mes": "enero",
+    "totalVentas": 44556677
+},{
+    "ciudad": "Tunja",
+    "mes": "enero",
+    "totalVentas": 1588888
+}]
