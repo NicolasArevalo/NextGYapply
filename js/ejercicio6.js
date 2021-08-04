@@ -20,18 +20,15 @@ const obj = [{
     "totalVentas": 1588888
 }]
 
-const objJsonExterno = JSON.parse(ciudades.json);
-console.log(objJsonExterno);
-
 
 function ejecutarSeis(){
 
     var mostrar = document.getElementById("mostrarSeis");
     var ciudadUsuario = document.getElementById("ciudad").value;
-    console.log(ciudadUsuario);
+    /* console.log(ciudadUsuario); */
 
     for(var i=0; i<=obj.length-1; i++){
-        console.log('entré al for');
+        /* console.log('entré al for'); */
         if(obj[i]['ciudad'] === ciudadUsuario){
             mostrar.innerHTML=('Mes: '+obj[i]['mes'] + " <br> Total de ventas: " + obj[i]['totalVentas']);
             break;
