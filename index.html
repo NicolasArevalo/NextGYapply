@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTGY Apply</title>
+
+    <script src="ejercicio1.js"></script>
+    <!-- <script src="ejercicio2.js"></script> -->
+    <script src="ejercicio4.js"></script>
+    <script src="ejercicio5.js"></script>
+    <script src="ejercicio6.js"></script>
+    
+</head>
+<body>
+    <h1>NEXTGY - Nicolás Arévalo</h1>
+
+    <div name="ejercicio1">
+        <h2>Ejercicio 1</h2>
+
+        <span>Ingresa el número de multiplos de 4 que deseas ver: </span> <br>
+        <form>
+            <input type="text" id="number" />
+            <button type="button" onclick='calc()'>Enviar</button>
+        </form>
+        <span>Resultado:</span>
+        <div id="resultado"></div>
+    </div>
+
+    <div name="ejercicio2">
+        <h2>Ejercicio 2</h2>
+
+        <span>Adjunta aquí el archivo con los números para sumar los pares y los primos: <br>
+        </span> <br>
+        <form>
+            <input type="file" onchange="cambiar()" /><br>
+        </form>
+        <span>Resultado: </span>
+        <div id="resultado"></div>
+    </div>
+
+
+    <div name="ejercicio4">
+
+        <h2>Ejercicio 4</h2>
+
+        <span>Teniendo este array: </span><br>
+        <div id="mostrarPalabras"></div><br>
+        <input type="text" id="keyword"></input>
+        <button onclick="ejecutar()">Buscar</button><br>
+        <span>Resultado: <br></span>
+        <div id="mostrar"></div>
+
+
+    </div>
+
+    <div name="ejercicio5">
+
+        <h2>Ejercicio 5</h2>
+
+        <span>Inserta una expresión matemática: </span><br>
+        <input type="text" id="exp"></input>
+        <button onclick="ejecutar()">Ejecutar</button><br>
+        <span>Resultado: <br></span>
+        <div id="mostrar"></div>
+
+
+    </div>
+
+    <div name="ejercicio6">
+
+        <h2>Ejercicio 6</h2>
+
+        <span>Inserta la ciudad que quieres buscar (Barranquilla, Cartagena, Tunja, Bogota, Sincelejo): </span><br>
+        <input type="text" id="ciudad"></input>
+        <button onclick="ejecutarSeis()">Ejecutar</button><br>
+        <span>Resultado: <br></span>
+        <div id="mostrarSeis"></div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
