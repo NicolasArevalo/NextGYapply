@@ -6,6 +6,10 @@ var pares = [];
 
 function ejecutarDos() {
     var resultadoEj2 = document.getElementById("resultadoEj2");
+    var numerosShow = document.getElementById("numerosEj2");
+
+    numerosShow.innerHTML = numeros;
+    
     console.log('cualquier cosa');
     numeros.forEach(element => {
 
