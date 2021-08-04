@@ -2,7 +2,7 @@
 function ejecutar(){
 
     var exp = document.getElementById("exp").value;
-    var mostrar = document.getElementById("mostrar");
+    var mostrar = document.getElementById("mostrarCinco");
     var op = 0;
 
     var expNum = exp.split(/(?=[-+*/()])|(?<=[-+*/()])/);
